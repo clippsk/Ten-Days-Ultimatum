@@ -1,0 +1,16 @@
+title: "My Web Novel"
+description: "English translation"
+# Any GitHub Pages-supported theme works. Minimal is clean.
+theme: jekyll-theme-minimal
+
+# Pretty URLs: /chapter_1/ instead of /chapter_1.html
+permalink: /:basename/
+
+# Apply the "chapter" layout to everything inside /chapters
+defaults:
+  - scope:
+      path: "chapters"
+    values:
+      layout: chapter
+
+# Optional: If you later add a custom domain, put it in CNAME at repo root.
